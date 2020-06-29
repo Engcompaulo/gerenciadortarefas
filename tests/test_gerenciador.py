@@ -1,8 +1,8 @@
 from starlette.testclient import TestClient
 from starlette.status import HTTP_200_OK
-
 from gerenciador_tarefas.gerenciador import app
 from gerenciador_tarefas.gerenciador import TAREFAS
+
 
 def test_quando_listar_tarefas_devo_retornar_codigo_de_status_ok():
     cliente = TestClient(app)
